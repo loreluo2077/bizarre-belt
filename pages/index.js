@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import CommentCard from "./components/CommentCard";
-import MusicInfoFooter from "./components/MusicInfoFooter";
-import SongSwitcher from "./components/SongSwitcher";
+import Header from "../components/Header";
+import CommentCard from "../components/CommentCard";
+import MusicInfoFooter from "../components/MusicInfoFooter";
+import SongSwitcher from "../components/SongSwitcher";
 
 export default function Home() {
   // 假设的歌曲和评论数据

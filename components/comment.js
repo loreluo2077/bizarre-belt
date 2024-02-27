@@ -12,12 +12,13 @@ export default function Comment({ msg, author, fontSize }) {
   return (
     <div>
       <main>
-        <section className='w-auto flex'>
+        <section className='w-auto flex flex-col'>
           <div className='slide-message flex max-w-sm m-auto p-10 relative'>
             <q className=''>
-              {msg} <span className='opacity-45 text-sm'>{author}</span>
+             {msg} 
             </q>
           </div>
+          <div className=" text-md text-right pr-5 text-lg">@{author}</div>
         </section>
       </main>
 

@@ -18,7 +18,7 @@ export default function Comment({ msg, author, fontSize }) {
              {msg} 
             </q>
           </div>
-          <div className=" text-md text-right pr-5 text-lg">@{author}</div>
+          <div className="pt-5 text-md text-right pr-5 text-lg">@{author}</div>
         </section>
       </main>
 

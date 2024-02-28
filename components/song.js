@@ -9,11 +9,10 @@ import Comment from "../components/comment";
 export default function Song({ songData }) {
   const comments = songData.comments;
   return (
-    <div className="bg-[#FE625B] flex flex-col space-y-10">
+    <div className='bg-[#FE625B] flex flex-col space-y-10'>
       <Swiper
-        className="px-2 max-w-full sm:max-w-screen-md"
+        className='px-2 max-w-full sm:max-w-screen-md'
         navigation={true}
-    
         modules={[Navigation]}
         style={{
           "--swiper-navigation-color": "#fff",
@@ -24,17 +23,17 @@ export default function Song({ songData }) {
           <SwiperSlide>
             <Comment
               msg={comment.content}
-              fontSize="32"
+              fontSize='32'
               author={comment.author}
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <div className="flex justify-center">
+      <div className='flex justify-center'>
         <iframe
-          title="播放器"
-          border="0"
+          title='播放器'
+          border='0'
           width={400}
           height={90}
           src={songData.src}

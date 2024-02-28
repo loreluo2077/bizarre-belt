@@ -1,4 +1,4 @@
-export default function Button({ text }) {
+export default function Button({ text, onClick }) {
   return (
     <div className='flex justify-center my-3'>
       <section className='flex justify-center items-end'>
@@ -6,6 +6,7 @@ export default function Button({ text }) {
           className='cursor-pointer appearance-none rounded-full 
            border-2 border-[#F8E8DB] bg-[#FE625B] text-[#f8e8db] text-lg leading-none tracking-tighter py-3 px-7 
           hover:bg-[#F8E8DB] hover:text-[#FE625B] active:bg-[#d55751]'
+          onClick={onClick}
         >
           {text}
         </button>
